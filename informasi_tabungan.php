@@ -1,0 +1,9 @@
+<?php 
+require_once config.php;
+
+function db_informasi_tabungan_insert($idtrans,$jml)
+{
+	mysql_query("insert into informasi_tabungan (ID_Transaksi, Jumlah_Tabungan) values ($idtrans, $jml)");
+	cls();
+}
+?>
